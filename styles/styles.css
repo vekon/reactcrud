@@ -1,0 +1,27 @@
+.header {
+  font-size: 25px;
+  padding: 20px;
+}
+
+.left-nav {
+  height: 100vh;
+}
+
+.left-nav .nav-item {
+  padding: 30px 10px;
+  border-bottom: solid 2px #ddd;
+}
+
+.feature-container {
+  height: 100vh;
+  padding: 20px;
+  border-left: solid 2px #ddd;
+}
+
+.stream-list {
+  margin: 20px 0; 
+}
+
+.stream-list .stream {
+  margin: 10px 0;  
+}
