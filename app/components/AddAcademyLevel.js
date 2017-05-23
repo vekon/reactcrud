@@ -86,12 +86,17 @@ var AddAcademyLevel = React.createClass({
 
     return (
       <form onSubmit={this.onSubmit}>
-        Academy Level Name : <input type="text" value={this.state.name} onChange={this.nameChangeHandler}/>
-        Description : <input type="text" value={this.state.desc} onChange={this.descChangeHandler}/>
-
-        <input type="submit" value={this.state.submitValue}/>
+        <div className="form-group">
+          <label>Level Name</label>
+          <input type="text" className="form-control"value={this.state.name} onChange={this.nameChangeHandler} placeholder="Level"/>
+        </div>
+        <div className="form-group">
+          <label>Description</label>
+          <input type="text" className="form-control"value={this.state.desc} onChange={this.descChangeHandler} placeholder="Description"/>
+        </div>
+        <input className="btn btn-default" type="submit" value={this.state.submitValue}/>
         { this.props.params.id &&
-          <input type="button" value='Delete' onClick={this.deleteHandler}/>
+          <input className="btn btn-default" type="button" value='Delete' onClick={this.deleteHandler}/>
         }
       </form>
     );

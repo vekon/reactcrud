@@ -3,7 +3,8 @@ import { Link } from 'react-router';
 import axios from 'axios';
 
 var Streams = React.createClass({
-  getInitialState() {
+
+  getInitialState: function() {
     return {
       streams:[]
     };
@@ -36,7 +37,7 @@ var Streams = React.createClass({
 
     return (
       <div className="">
-        <Link to="/stream/new"><input type="button" value="Add Stream"/></Link>
+        <Link to="/stream/new"><input className="btn btn-default" type="button" value="Add Stream"/></Link>
         <div className="stream-list">{streamList}</div>
       </div>
     );

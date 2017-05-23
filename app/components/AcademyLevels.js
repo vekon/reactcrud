@@ -4,7 +4,7 @@ import axios from 'axios';
 
 var AcademyLevels = React.createClass({
 
-  getInitialState() {
+  getInitialState : function() {
     return {
       academyLevels:[]
     };
@@ -35,7 +35,7 @@ var AcademyLevels = React.createClass({
 
     return (
       <div className="">
-        <Link to="/academy-level/new"><input type="button" value="Add Academy Level"/></Link>
+        <Link to="/academy-level/new"><input className="btn btn-default" type="button" value="Add Academy Level"/></Link>
         <div className="stream-list">{academyLevelList}</div>
       </div>
     );
